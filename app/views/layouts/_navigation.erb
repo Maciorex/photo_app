@@ -12,20 +12,15 @@
         <li><%= link_to "Link2", "/path2"  %></li>
         <li><%= link_to "Link3", "/path3"  %></li>
       </ul>
+      <ul class="nav navbar-right col-md-4">
+        <% if current_user %>
+          <li class="col col-md-8 user-name"><span class="glyphicon glyphicon-user"><%= link_to truncate(current_user.email), edit_user_registration_path  %></span></li>
+          <li class="col-md-1"> </li>
+          <li class="col col-md-3 logout"><%= link_to "Logout", destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete %></li>
+        <% else %>
+          <li class="col col-md-4"><%= link_to "Log in", new_user_session_path, class: "btn btn-xs btn-primary"  %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-9">
-      <%= bootstrap_flash %>
-      <%= yield %>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; Elo mordy 2018</p>
-  </footer>
-
 </div>
