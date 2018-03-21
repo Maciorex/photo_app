@@ -1,0 +1,45 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - db/**/*
+    - config/**/*
+Metrics/LineLength:
+  Max: 100
+Style/StringLiterals:
+  Enabled: false
+AlignParameters:
+  Enabled: false
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 100
+Metrics/AbcSize:
+  Max: 20
+MethodLength:
+  CountComments: false
+  Max: 15
+ClassLength:
+  CountComments: false
+  Max: 200
+Style/AlignHash:
+  Enabled: false
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Style/DotPosition:
+  EnforcedStyle: leading
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/MixinUsage:
+  Enabled: false
+Style/ExpandPathArguments:
+  Enabled: false
+Style/StderrPuts:
+  Enabled: false
