@@ -7,17 +7,19 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'carrierwave'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'fog'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
+gem 'mini_magick'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.5'
 gem 'sass-rails', '~> 5.0'
 gem 'sendgrid-ruby'
 gem 'stripe'
-gem 'turbolinks', '~> 5'
 gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
 
